@@ -21,13 +21,5 @@ dependencies {
 }
 
 test {
-    useTestNG() {
-        parallel="classes"
-        threadCount 3
-        useDefaultListeners = true
-    }
-    testLogging {
-        events "PASSED", "FAILED", "SKIPPED"
-        showStandardStreams = true
-    }
+    useTestNG()
 }
